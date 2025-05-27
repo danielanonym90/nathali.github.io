@@ -1,0 +1,224 @@
+header {
+    width: auto;
+    color: white;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(10px);          /* Apply blur behind it */
+    padding: 0;
+    border-radius: 16px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+html {
+    height: 100%;
+    background: linear-gradient(to right, black, rgb(35, 22, 94));
+} 
+body {
+    height: 100%;
+    font-family: Arial;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, black, rgb(35, 22, 94));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: block;
+    justify-items: center;
+}
+
+.Instagram {
+    cursor: pointer;
+    grid-area: Instagram;
+    padding: 10px;
+    border: solid white;
+    margin: 20px;
+    border-radius: 20px;
+}
+.LinkeDin {
+    grid-area: LinkeDin;
+    padding: 10px;
+    border: solid white;
+    margin: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Github {
+    grid-area: Github;
+    padding: 10px;
+    border: solid white;
+    margin: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.elements {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-areas: "Instagram LinkeDin Github";
+    padding: 10px;
+    justify-content: center;
+
+}
+.Github:hover, .LinkeDin:hover, .Instagram:hover {
+    transform: scale(1.1);
+    transition: ease;
+}
+.Github, .Instagram, .LinkeDin {
+    background-color: black;
+    border: none;
+    box-shadow: 0 0 7px 3px black; 
+}
+#h1 {
+    margin-top: 50px;
+}
+.functions {
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "input button";
+    justify-content: center;
+    padding: 0;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+}
+@media (min-width: 1200px) {
+.functions {
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "input button";
+    justify-content: center;
+    padding: 0;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+}
+#taskList {
+    color: white;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 0;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 300px;
+
+}
+header {
+    width: fit-content;
+    color: white;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(10px);          /* Apply blur behind it */
+    padding: 0;
+    border-radius: 16px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+}
+
+#taskinput {
+    color: white;
+    grid-area: input;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: solid 1px rgb(255, 255, 255);
+    padding: 5px;
+    width: 75%;
+}
+#addTask {
+    width: fit-content;
+    grid-area: button;
+    margin: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px white;
+    border: none;
+}
+#addTask, #taskinput {
+    margin: 50px;
+}
+#taskinput::placeholder {
+    color: white;
+}
+#taskinput:focus {
+    outline: none;
+    color: white;
+}
+#addTask:hover {
+    border: none;
+    transform: scale(1.1);
+    transition: ease;
+    box-shadow: 0 0 7px 4px white;
+}
+#taskList {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 0;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    overflow-y: auto;
+    max-height: 300px;
+
+}
+.resultList {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-areas: "checkInput resultTxt removeimage";
+    align-items: center;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.removeimage {
+   grid-area: removeimage;
+   margin-left: 100%;
+   width: 13px;
+   height: 13px;
+   cursor: pointer;
+   width: auto;
+}
+.removeimage:hover {
+    transform: scale(1.3);
+    transition: ease;
+    width: auto;
+}
+
+.resultTxt {
+    grid-area: resultTxt;
+    width: auto;
+}
+
+.checkInput {
+    grid-area: checkInput;
+    width: auto;
+}
+#taskList {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: auto;
+    min-height: 250px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
