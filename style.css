@@ -227,7 +227,7 @@ header {
     display: grid;
     grid-template-columns: auto 1fr auto; /* deixa o meio flexível */
     grid-template-areas: "checkInput resultTxt removeimage";
-    align-items: center;
+    align-items: flex-start;
     gap: 10px; /* opcional, espaço entre colunas */
     width: fit-content;
 
