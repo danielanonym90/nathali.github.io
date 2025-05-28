@@ -162,6 +162,10 @@ header {
     justify-content: center;
 
 }
+.Instagram, .Github, .LinkeDin {
+    font-size: 10px;
+    border: none;
+}
 } 
 
 #taskinput {
