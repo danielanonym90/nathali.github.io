@@ -134,14 +134,14 @@ header {
     cursor: pointer;
     grid-area: Instagram;
     padding: 10px;
-    border: solid white;
+    border: none;
     margin: 10px;
     border-radius: 20px;
 }
 .LinkeDin {
     grid-area: LinkeDin;
     padding: 10px;
-    border: solid white;
+    border: none;
     margin: 10px;
     border-radius: 20px;
     cursor: pointer;
@@ -149,7 +149,7 @@ header {
 .Github {
     grid-area: Github;
     padding: 10px;
-    border: solid white;
+    border: none;
     margin: 10px;
     border-radius: 20px;
     cursor: pointer;
